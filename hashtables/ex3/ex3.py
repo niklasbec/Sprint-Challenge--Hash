@@ -1,8 +1,19 @@
 def intersection(arrays):
+    hashTable = {}
+    doubles = {}
 
-    """
-    YOUR CODE HERE
-    """
+    for array in arrays:
+        for el in array:
+            if el not in hashTable:
+                hashTable[el] = None
+            else:
+                doubles[el] = None
+    result = []
+    for key in doubles.keys():
+        result.append(key)
+    return result
+            
+
 
     return result
 
